@@ -27,7 +27,7 @@
   "devDependencies": {
     "ava": "^3.12.1",
     "esm": "^3.2.25",
-    "microbundle": "^0.12.3",
+    "microbundle": "^0.12.4",
     "np": "^6.5.0",
     "xo": "^0.33.1"
   },
