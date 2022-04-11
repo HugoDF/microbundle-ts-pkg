@@ -25,7 +25,7 @@
     "release": "yarn prepack && source .env && np"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
+    "ava": "^4.2.0",
     "esm": "^3.2.25",
     "microbundle": "^0.14.2",
     "np": "^7.6.0",
