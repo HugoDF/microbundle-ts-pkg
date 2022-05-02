@@ -1,11 +1,11 @@
 ![Build](https://github.com/HugoDF/buttondown/workflows/Build%20&%20test/badge.svg)
 
-microbundle-ts-pkg: A TypeScript npm package skeleton/starter project with microbundle, npde:test and prettier
+microbundle-ts-pkg: A TypeScript npm package skeleton/starter project with microbundle, node:test and prettier
 
 Comes with:
 
 - [SAMPLE_README.md](./SAMPLE_README.md) and [USE_CASES.md](./USE_CASES.md) for documentation.
-- [build-in `node:test` runner](https://nodejs.org/dist/latest-v18.x/docs/api/test.html) for testing (see [./tests](./tests))
+- [built-in `node:test` runner](https://nodejs.org/dist/latest-v18.x/docs/api/test.html) for testing (see [./tests](./tests))
 - prettier for formatting
 - microbundle for compiling TypeScript to UMD, ESM, CJS
 
