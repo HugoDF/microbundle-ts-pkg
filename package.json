@@ -1,6 +1,6 @@
 {
   "name": "microbundle-ts-pkg",
-  "description": "A TypeScript npm package skeleton/starter project with microbundle, AVA and XO",
+  "description": "A TypeScript npm package skeleton/starter project with microbundle, node:test and prettier",
   "version": "0.0.1",
   "source": "src/main.ts",
   "main": "dist/main.umd.js",
@@ -18,32 +18,20 @@
   "scripts": {
     "build": "microbundle --define PKG_VERSION=$npm_package_version",
     "watch": "microbundle watch --define PKG_VERSION=$npm_package_version",
-    "test": "ava",
-    "lint": "xo src tests",
-    "format": "xo src tests --fix",
+    "test": "node tests/_run.mjs",
+    "lint": "prettier src tests -c",
+    "format": "prettier src tests --write",
     "prepack": "rm -rf dist && yarn build",
-    "release": "yarn prepack && source .env && np"
+    "release": "npm run prepack && source .env && npx np"
   },
   "devDependencies": {
-    "ava": "^3.7.0",
-    "esm": "^3.2.25",
-    "microbundle": "^0.11.0",
-    "np": "^6.2.1",
-    "xo": "^0.30.0"
+    "microbundle": "^0.15.0",
+    "prettier": "^2.6.2"
   },
-  "xo": {
-    "prettier": true,
-    "space": true,
-    "globals": [],
-    "rules": {}
-  },
-  "ava": {
-    "require": [
-      "esm"
-    ]
+  "prettier": {
+    "singleQuote": true
   },
   "license": "MIT",
-  "dependencies": {},
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
