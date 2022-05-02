@@ -59,10 +59,10 @@ The following recommended installation requires [npm](https://npmjs.org/). If yo
 npm install --save @todo
 ```
 
-You may also use [yarn](https://yarnpkg.com/en/) to install.
+You may also use [npm run](https://npm runpkg.com/en/) to install.
 
 ```sh
-yarn add @todo
+npm run add @todo
 ```
 
 <a name="quick-start"></a>
@@ -81,26 +81,26 @@ If you are interested in the future direction of this project, please take a loo
 
 ## Requirements
 
-- Node 10
-- Yarn 1.x or npm
+- Node 18
+- npm v7
 
 ## Setup
 
 1. Clone the repository
-2. Run `yarn` or `npm install` installs all required dependencies.
-3. Run `yarn build` to build from TypeScript to common JavaScript distribution formats.
-4. Run `yarn test` to run all tests :D.
+2. Run `npm install` installs all required dependencies.
+3. Run `npm run build` to build from TypeScript to common JavaScript distribution formats.
+4. Run `npm run test` to run all tests.
 
 ## npm scripts
 
 > Equivalent `npm run <script>` should also work
 
-- `yarn test` run tests against **built output** with [ava](https://github.com/avajs/ava). **Important**: runs against build output so run `yarn build` beforehand.
-- `yarn build` run build from TypeScript to UMD, CJS, ESM with [microbundle](https://github.com/developit/microbundle)
-- `yarn watch` runs build in watch mode with [microbundle](https://github.com/developit/microbundle)
-- `yarn lint` will lint all of the files with [xo](https://github.com/xojs/xo)
-- `yarn format` will run lint with `--fix` option on all the examples files (and tests).
-- `yarn release`, run clean, production build and release with `np`.
+- `npm run test` run tests against **built output** with [ava](https://github.com/avajs/ava). **Important**: runs against build output so run `npm run build` beforehand.
+- `npm run build` run build from TypeScript to UMD, CJS, ESM with [microbundle](https://github.com/developit/microbundle)
+- `npm run watch` runs build in watch mode with [microbundle](https://github.com/developit/microbundle)
+- `npm run lint` will lint all of the files with [xo](https://github.com/xojs/xo)
+- `npm run format` will run lint with `--fix` option on all the examples files (and tests).
+- `npm run release`, run clean, production build and release with `np`.
 
 # About
 
@@ -112,11 +112,9 @@ This package is maintained by Hugo from [Code with Hugo](https://codewithhugo.co
 Special thanks to:
 
 - The developers behind
-  - [ava](https://avajs.dev)
-  - [esm](https://github.com/standard-things/esm#readme)
   - [microbundle](https://github.com/developit/microbundle#readme)
   - [np](https://github.com/sindresorhus/np#readme)
-  - [xo](https://github.com/xojs/xo#readme)
+  - [microbundle-ts-pkg](https://github.com/HugoDF/microbundle-ts-pkg) template
 
 # LICENSE
 

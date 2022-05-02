@@ -1,36 +1,34 @@
 ![Build](https://github.com/HugoDF/buttondown/workflows/Build%20&%20test/badge.svg)
 
-microbundle-ts-pkg: A TypeScript npm package skeleton/starter project with microbundle, AVA and XO
+microbundle-ts-pkg: A TypeScript npm package skeleton/starter project with microbundle, node:test and prettier
 
 Comes with:
 
 - [SAMPLE_README.md](./SAMPLE_README.md) and [USE_CASES.md](./USE_CASES.md) for documentation.
-- AVA for testing (see [./tests](./tests))
-- XO for linting/formatting
+- [built-in `node:test` runner](https://nodejs.org/dist/latest-v18.x/docs/api/test.html) for testing (see [./tests](./tests))
+- prettier for formatting
 - microbundle for compiling TypeScript to UMD, ESM, CJS
 
 ## Requirements
 
-- Node 10
-- Yarn 1.x or npm
+- Node 18 (to run this repository, due to `node:test` usage)
+- npm v7+
 
 ## Setup
 
 1. Clone the repository
-2. Run `yarn` or `npm install` installs all required dependencies.
-3. Run `yarn build` to build from TypeScript to common JavaScript distribution formats.
-4. Run `yarn test` to run all tests :D.
+2. Run `npm install` installs all required dependencies.
+3. Run `npm run build` to build from TypeScript to common JavaScript distribution formats.
+4. Run `npm test` to run all tests.
 
 ## npm scripts
 
-> Equivalent `npm run <script>` should also work
-
-- `yarn test` run tests against **built output** with [ava](https://github.com/avajs/ava). **Important**: runs against build output so run `yarn build` beforehand.
-- `yarn build` run build from TypeScript to UMD, CJS, ESM with [microbundle](https://github.com/developit/microbundle)
-- `yarn watch` runs build in watch mode with [microbundle](https://github.com/developit/microbundle)
-- `yarn lint` will lint all of the files with [xo](https://github.com/xojs/xo)
-- `yarn format` will run lint with `--fix` option on all the examples files (and tests).
-- `yarn release`, run clean, production build and release with `np`.
+- `npm run test` run tests against **built output** with Node.js' native `node:test` module. **Important**: runs against build output so run `npm run build` beforehand.
+- `npm run build` run build from TypeScript to UMD, CJS, ESM with [microbundle](https://github.com/developit/microbundle)
+- `npm run watch` runs build in watch mode with [microbundle](https://github.com/developit/microbundle)
+- `npm run lint` will ensure all of the files are prettier-formatted
+- `npm run format` will run prettier formatting option on all the examples files (and tests).
+- `npm run release`, run clean, production build and release with `np`.
 
 # About
 
@@ -42,11 +40,8 @@ This package is maintained by Hugo from [Code with Hugo](https://codewithhugo.co
 Special thanks to:
 
 - The developers behind
-  - [ava](https://avajs.dev)
-  - [esm](https://github.com/standard-things/esm#readme)
   - [microbundle](https://github.com/developit/microbundle#readme)
   - [np](https://github.com/sindresorhus/np#readme)
-  - [xo](https://github.com/xojs/xo#readme)
 
 # LICENSE
 
