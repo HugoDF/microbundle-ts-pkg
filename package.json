@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "microbundle": "^0.15.1",
-    "prettier": "^2.8.8"
+    "prettier": "^3.0.2"
   },
   "prettier": {
     "singleQuote": true
